@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>George Johnson | Technical Writer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0b0f1a;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* Animated Gradient Background */
+body::before{
+  content:'';
+  position:fixed;
+  width:200%;
+  height:200%;
+  background:linear-gradient(45deg,#00f5ff,#7b61ff,#ff00c8,#00f5ff);
+  animation:gradientMove 15s linear infinite;
+  z-index:-2;
+  opacity:.08;
+}
+
+@keyframes gradientMove{
+  0%{transform:translate(0,0);}
+  50%{transform:translate(-25%,-25%);}
+  100%{transform:translate(0,0);}
+}
+
+/* Navbar */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  backdrop-filter:blur(10px);
+  background:rgba(0,0,0,0.3);
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  z-index:999;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#00f5ff;
+  text-shadow:0 0 10px #00f5ff;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:4rem;
+  background:linear-gradient(90deg,#00f5ff,#ff00c8);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glowText 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowText{
+  from{text-shadow:0 0 10px #00f5ff;}
+  to{text-shadow:0 0 25px #ff00c8;}
+}
+
+.hero p{
+  margin-top:15px;
+  opacity:.8;
+}
+
+.btn{
+  margin-top:25px;
+  padding:12px 28px;
+  border-radius:30px;
+  border:none;
+  background:linear-gradient(90deg,#00f5ff,#7b61ff);
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #00f5ff;
+}
+
+/* Sections */
+section{
+  padding:100px 10%;
+}
+
+.section-title{
+  font-size:2.5rem;
+  margin-bottom:40px;
+  text-align:center;
+}
+
+/* Glass Cards */
+.card{
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,0.05);
+  border-radius:20px;
+  padding:30px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px rgba(0,245,255,.4);
+}
+
+/* Skills */
+.skill{
+  margin-bottom:20px;
+}
+
+.bar{
+  height:10px;
+  border-radius:10px;
+  background:rgba(255,255,255,.1);
+  overflow:hidden;
+}
+
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,#00f5ff,#ff00c8);
+  animation:load 2s forwards;
+}
+
+@keyframes load{
+  from{width:0;}
+}
+
+/* Timeline */
+.timeline{
+  border-left:2px solid #00f5ff;
+  padding-left:20px;
+}
+
+.timeline-item{
+  margin-bottom:30px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:40px;
+  opacity:.6;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1{font-size:2.5rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div><b>George Johnson</b></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Technical Writer</h1>
+  <p>Capillary Technologies • Bangalore</p>
+  <button class="btn" onclick="scrollToSection('contact')">Let’s Connect</button>
+</div>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    MA Media & Corporate Communications student at Christ University.  
+    Technical Writer at Capillary Technologies with product training expertise in **Timezone Handling**.  
+    Passionate about documentation, UX writing, APIs, and product storytelling.
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item card">
+      <h3>Technical Writer – Capillary Technologies</h3>
+      <p>6 Month Internship + 6 Month Contract</p>
+      <p>Conducted Product Training Sessions on Timezone Handling, API Docs, and Knowledge Base Creation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skill">
+    <p>Technical Writing</p>
+    <div class="bar"><div class="fill" style="width:95%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>API Documentation</p>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Product Training</p>
+    <div class="bar"><div class="fill" style="width:85%"></div></div>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>Email: georgejohnsonoff@gmail.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/georgejohnsonoff/</p>
+    <button class="btn" onclick="window.open('https://www.linkedin.com/in/georgejohnsonoff/')">Open LinkedIn</button>
+  </div>
+</section>
+
+<footer>
+  © 2026 George Johnson • Portfolio
+</footer>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
