@@ -1,0 +1,115 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "780": [
+      780
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "1f391b9e": [
+      869,
+      61
+    ],
+    "393be207": [
+      134
+    ],
+    "a7456010": [
+      235
+    ],
+    "c4f5d8e4": [
+      869,
+      634
+    ],
+    "styles": [
+      61,
+      354,
+      634,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "61": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.da172f30.js",
+          "hash": "8f8f7ff006fed83a",
+          "publicPath": "/Portfolio/assets/js/1f391b9e.da172f30.js"
+        }
+      ]
+    },
+    "134": {
+      "js": [
+        {
+          "file": "assets/js/393be207.5688b766.js",
+          "hash": "7198c383c60d0ccb",
+          "publicPath": "/Portfolio/assets/js/393be207.5688b766.js"
+        }
+      ]
+    },
+    "235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.c0e2ce4a.js",
+          "hash": "82c96c2687cb6401",
+          "publicPath": "/Portfolio/assets/js/a7456010.c0e2ce4a.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.faf4a924.js",
+          "hash": "db70c31213ceec53",
+          "publicPath": "/Portfolio/assets/js/runtime~main.faf4a924.js"
+        }
+      ]
+    },
+    "634": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.1ce8c9ad.js",
+          "hash": "d1fdf3337771a480",
+          "publicPath": "/Portfolio/assets/js/c4f5d8e4.1ce8c9ad.js"
+        }
+      ]
+    },
+    "780": {
+      "js": [
+        {
+          "file": "assets/js/780.ff884c15.js",
+          "hash": "be2d9300ee686012",
+          "publicPath": "/Portfolio/assets/js/780.ff884c15.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.86ec80bb.js",
+          "hash": "7319f41374b959a5",
+          "publicPath": "/Portfolio/assets/js/main.86ec80bb.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.3d8e36c7.css",
+          "hash": "9998f0a1b5610afb",
+          "publicPath": "/Portfolio/assets/css/styles.3d8e36c7.css"
+        }
+      ]
+    }
+  }
+}
